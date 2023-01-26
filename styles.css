@@ -1,4 +1,4 @@
-* {
+html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
 }
@@ -59,14 +59,39 @@ article {
 #image {
     width: 90%;
     min-width: 270px;
+    max-width: 1024px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 #img-caption {
-    font-size: inherit;
+    
     margin: 1.6rem auto 0.6rem auto;
     width: 90%;
     min-width: 270px;
     text-align: center;
 }
+
+#tribute-info {
+    width: max(550px, 5.5vw);
+    margin: 0 auto;
+}
+
+#tribute-info h3 {
+    text-align: center;
+    margin: 5.5rem auto;
+    font-weight: 700;
+}
+
+#tribute-info ul {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+#tribute-info ul li {
+    line-height: 3rem;
+}
+
