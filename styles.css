@@ -58,6 +58,7 @@ article {
 
 #image {
     width: 90%;
+    height: auto;
     min-width: 270px;
     max-width: 1024px;
     object-fit: cover;
@@ -65,7 +66,6 @@ article {
 }
 
 #img-caption {
-    
     margin: 1.6rem auto 0.6rem auto;
     width: 90%;
     min-width: 270px;
@@ -73,14 +73,16 @@ article {
 }
 
 #tribute-info {
-    width: max(550px, 5.5vw);
+    width: 50%;
+    min-width: 270px;
     margin: 0 auto;
 }
 
-#tribute-info h3 {
+h3 {
     text-align: center;
     margin: 5.5rem auto;
     font-weight: 700;
+    width: 100%;
 }
 
 #tribute-info ul {
@@ -89,9 +91,24 @@ article {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    width: 100%;
 }
 
-#tribute-info ul li {
+#tribute-info ul li, #tribute-info p {
     line-height: 3rem;
+    width: 100%;
 }
 
+#tribute-info p {
+    width: 100%;
+    margin: 4.4rem -1.6rem;
+    font-style: italic;
+}
+
+#tribute-link:hover {
+    font-size: 2rem;
+}
+
+#tribute-link:active {
+    color: #000;
+}
